@@ -1,0 +1,167 @@
+.movie-carousel-container {
+    width: 100vw;
+    background-color: black;
+  }
+  
+  .movie-poster {
+    height: 300px;
+    border: 1px solid #ffa31a;
+    overflow: hidden;
+  }
+  
+  .movie-poster > img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .movie-card-container {
+    height: 550px;
+    background-color: black;
+  }
+  
+  .movie-card {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), var(--img);
+  }
+  
+  .movie-detail {
+    position: absolute;
+    top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  .movie-title {
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .movie-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+  }
+  
+  .play-button-icon-container {
+    padding: 0px;
+    margin: 0px;
+    width: 150px;
+  }
+  
+  .play-button-icon {
+    padding: 0px;
+    margin: 0px;
+    color: #ffa31a;
+    font-size: 3rem;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .play-button-icon:hover {
+    font-size: 4rem;
+    color: white;
+  }
+
+  .grid-play-button-icon {
+    padding: 0px;
+    margin: 0px;
+    color: #ffa31a;
+    font-size: 2.5rem;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .grid-play-button-icon:hover {
+    color: white;
+  }
+
+  .movie-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    padding: 30px;
+  }
+  
+  .movie-grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ffa31a;
+    padding: 15px;
+    margin: 5px;
+  }
+  
+  .grid-movie-poster {
+    width: 200px;
+    height: 300px;
+  }
+  
+  .grid-movie-buttons {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .grid-movie-item h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+
+  .movie-grid-item:hover {
+    transform: scale(1.07);
+    transition: 0.3s;
+  }
+
+  .movie-buttons-container button{
+    background-color: #ffa31a;
+    color: black;
+    font-weight: bold;
+    padding: 9px;
+    border-radius: 18px;
+    font-size: large;
+    transition: 0.3s;
+    border: none;
+  }
+
+  .movie-buttons-container button:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 9px;
+    border-radius: 18px;
+    font-size: 1.2rem;
+  }
+
+  .grid-movie-buttons button {
+    background-color: #ffa31a;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 18px;
+  } 
+
+  .grid-movie-buttons button:hover {
+    background-color: white;
+    color: black;
+    border-radius: 18px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .movie-detail {
+      flex-direction: column;
+      align-items: center;
+      top: 20px;
+    }
+  }
+  
